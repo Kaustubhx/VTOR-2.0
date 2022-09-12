@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+
+interface carouselImage {
+  imageSrc: string,
+  imageAlt: string,
+}
 
 @Component({
   selector: 'Banner',
@@ -6,6 +12,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
+
+  @Input() images: carouselImage[] = []
+  @Input() indicators = true;
+  @Input() controls = true;
+
+  selectedIndex = 0;
+
+  selectImage(index: number): void {
+    this.selectedIndex = index
+  }
 
   constructor() { }
 

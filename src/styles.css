@@ -20,3 +20,47 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.carousel-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    /* width: 1200px; */
+}
+
+.carousel-container img {
+    object-fit: contain;
+    display: none;
+    width: fit-content;
+}
+
+.carousel-container img.image-active {
+    display: block;
+    /* width: 1200px; */
+    /* height: 400px; */
+}
+
+.carousel-dot-container {
+    position: absolute;
+    inset: auto 0 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    opacity: 1;
+} 

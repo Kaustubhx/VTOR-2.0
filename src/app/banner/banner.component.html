@@ -1,13 +1,28 @@
-<div id="banner" class="px-5 h-[85vh] xl:h-[80vh]">
-    <div id="bannerContent" class="flex flex-col text-center justify-center">
-        <div id="bannerHead" class="">
-            <h1 class="text-primary_text font-extrabold text-lg">We Build Scalable Business Solutions</h1>
-            <p class="text-primary_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde at alias
-                aut doloribus.</p>
+<div id="banner" class="h-[85vh] xl:h-100vh ">
+    <div id="cloud">
+        <img src="https://html.crumina.net/html-utouch/img/clouds1.png" class="absolute -z-10" alt="Slide1 Clouds">
+    </div>
+    <div id="bannerContent" class="text-center mt-10">
+        <div id="bannerHead" class="inline-flex flex-col text-primary_text max-w-2xl">
+            <h1 class=" font-extrabold text-lg xl:text-4xl">We Build Scalable Business Solutions</h1>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab
+                deleniti numquam quam obcaecati quisquam hic qui placeat.</p>
         </div>
-        <div id="bannerBtns" class="space-y-3 flex flex-col mt-8">
-            <button class="rounded-full bg-yellow-400 p-2">Know More</button>
-            <button class="rounded-full p-2 border-2 border-sky-500">Get Started Now</button>
+        <div id="bannerBtns"
+            class="space-y-5 md:space-y-0 md:space-x-5 mt-8 font-semibold flex flex-col md:flex-row justify-center items-center">
+            <button class="rounded-full p-2 text-white bg-yellow-300 w-36">Know More</button>
+            <button class="rounded-full p-2 text-sky-500 border-2 border-sky-500 w-48">Get Started Now</button>
         </div>
+    </div>
+    <div *ngIf="images && images.length > 0" id="bannerImgs" class="carousel-container pt-8">
+        <img *ngFor="let image of images; let i = index" [src]="image.imageSrc" [alt]="image.imageAlt"
+            class="block mx-auto relative" [ngClass]="{'image-active': selectedIndex === i}" />
+    </div>
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images; let i=index" [ngClass]="{'active': selectedIndex === i}" class="dot"
+            (click)="selectImage(i)"></span>
+    </div>
+    <div *ngIf="controls" class="btn-carousel btn-prev">
+        <mat-icon>keyboard_arrow_right</mat-icon>
     </div>
 </div>
