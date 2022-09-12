@@ -3,6 +3,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap'); */
 
 @layer base {
@@ -21,11 +22,10 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.carousel-container {
+/* .carousel-container {
     position: relative;
     margin: auto;
     text-align: center;
-    /* width: 1200px; */
 }
 
 .carousel-container img {
@@ -36,8 +36,6 @@ body {
 
 .carousel-container img.image-active {
     display: block;
-    /* width: 1200px; */
-    /* height: 400px; */
 }
 
 .carousel-dot-container {
@@ -63,4 +61,12 @@ body {
 .active,
 .dot:hover {
     opacity: 1;
+} */
+
+
+/* OWL CAROUSEL */
+
+.banner .owl-prev, .banner .owl-next {
+    width: 110px;
+    height: 110px;
 } 

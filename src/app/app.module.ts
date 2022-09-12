@@ -7,18 +7,20 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { BannerComponent } from './banner/banner.component'
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

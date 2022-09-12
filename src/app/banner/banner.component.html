@@ -14,15 +14,14 @@
             <button class="rounded-full p-2 text-sky-500 border-2 border-sky-500 w-48">Get Started Now</button>
         </div>
     </div>
-    <div *ngIf="images && images.length > 0" id="bannerImgs" class="carousel-container pt-8">
-        <img *ngFor="let image of images; let i = index" [src]="image.imageSrc" [alt]="image.imageAlt"
-            class="block mx-auto relative" [ngClass]="{'image-active': selectedIndex === i}" />
-    </div>
-    <div *ngIf="indicators" class="carousel-dot-container">
-        <span *ngFor="let dot of images; let i=index" [ngClass]="{'active': selectedIndex === i}" class="dot"
-            (click)="selectImage(i)"></span>
-    </div>
-    <div *ngIf="controls" class="btn-carousel btn-prev">
-        <mat-icon>keyboard_arrow_right</mat-icon>
+
+    <div id="carousel" class="pt-8 relative">
+        <owl-carousel-o [options]="customOptions" *ngIf="images && images.length > 0" class="!text-center !m-auto">
+            <ng-container *ngFor=" let image of images; let i=index" id="bannerImgs">
+                <ng-template carouselSlide>
+                    <img [src]=" image.imageSrc" [alt]="image.imageAlt" class="!w-fit !inline-block !object-contain">
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
     </div>
 </div>
