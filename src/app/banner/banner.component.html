@@ -1,27 +1,60 @@
 <div id="banner" class="h-[85vh] xl:h-100vh ">
-    <div id="cloud">
-        <img src="https://html.crumina.net/html-utouch/img/clouds1.png" class="absolute -z-10" alt="Slide1 Clouds">
+
+    <div id="slider_Backgrounds" class="h-full w-full absolute -z-10">
+        <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
+            class="absolute h-[85vh] w-full object-contain -z-10" alt="Slide1 Clouds">
+        <img [ngClass]="{'!block' : data === 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png" alt=""
+            class="hidden h-[85vh] w-full object-contain absolute -z-10">
     </div>
     <div id="bannerContent" class="text-center mt-10">
-        <div id="bannerHead" class="inline-flex flex-col text-primary_text max-w-2xl">
-            <h1 class=" font-extrabold text-lg xl:text-4xl">We Build Scalable Business Solutions</h1>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab
-                deleniti numquam quam obcaecati quisquam hic qui placeat.</p>
-        </div>
-        <div id="bannerBtns"
-            class="space-y-5 md:space-y-0 md:space-x-5 mt-8 font-semibold flex flex-col md:flex-row justify-center items-center">
-            <button class="rounded-full p-2 text-white bg-yellow-300 w-36">Know More</button>
-            <button class="rounded-full p-2 text-sky-500 border-2 border-sky-500 w-48">Get Started Now</button>
-        </div>
-    </div>
 
-    <div id="carousel" class="pt-8 relative">
-        <owl-carousel-o [options]="customOptions" *ngIf="images && images.length > 0" class="!text-center !m-auto">
-            <ng-container *ngFor=" let image of images; let i=index" id="bannerImgs">
-                <ng-template carouselSlide>
-                    <img [src]=" image.imageSrc" [alt]="image.imageAlt" class="!w-fit !inline-block !object-contain">
-                </ng-template>
-            </ng-container>
-        </owl-carousel-o>
+        <div id="banner-wrapper">
+
+            <owl-carousel-o [options]="customOptions" (initialized)="getData($event)"
+                (translated)="getPassedData($event)">
+                <ng-container *ngFor="let image of bannerInfo; let detail of bannerInfo">
+                    <ng-template carouselSlide class="relative">
+                        <div [ngClass]="{'hidden': init != 0 || data > 0}" id="slide1_Content"
+                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-md lg:max-w-lg xl:max-w-3xl">
+                            <div id="slide_Info" class="inline-flex flex-col space-y-4 text-primary_text tracking-wide">
+                                <h1 class="font-bold text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
+                                <p class="">{{detail.slideDes}}</p>
+                            </div>
+                            <div id="slide1_Buttons" class="inline-flex flex-col space-y-6 mt-6 max-w-xs">
+                                <button class="bg-yellow-400 p-2 px-2 rounded-full text-white font-medium">Learn
+                                    More</button>
+                                <button
+                                    class="border-2 p-2 px-9 border-sky-500 rounded-full text-sky-500 font-medium">Get
+                                    Started Now</button>
+                            </div>
+                        </div>
+                        <div *ngIf="data == 1" id="slide2"
+                            class="absolute flex flex-col items-center justify-center h-[60vh] w-[38vw]">
+                            <div id="slide2_Content" class="max-w-sm">
+                                <div id="slide2_Info" class="text-left space-y-6 tracking-wider text-primary_text">
+                                    <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
+                                    <p class="">{{detail.slideDes}}</p>
+                                </div>
+                                <div id="slide2_Buttons">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div *ngIf="data == 2" id="slide3">
+                            <div id="slide3_Content" class="mx-6 flex flex-col items-start space-y-6">
+                                <div id="slide3_Info" class="max-w-lg text-left text-primary_text ">
+                                    <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
+                                    <p class="">{{detail.slideDes}}</p>
+                                </div>
+                                <button class="bg-[#25D366] rounded-full p-2 px-9 text-white">Contact US</button>
+                            </div>
+                        </div>
+                        <img [ngClass]="{'!inline-block h-[26rem]' : data == 2}" [src]="image.imageSrc"
+                            [alt]="image.imageAlt" class="md:!w-fit !block !mx-auto !object-contain mt-8 -z-10">
+                    </ng-template>
+                </ng-container>
+
+            </owl-carousel-o>
+        </div>
     </div>
 </div>

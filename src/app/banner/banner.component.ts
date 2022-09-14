@@ -1,7 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { SlidesOutputData, OwlOptions } from 'ngx-owl-carousel-o';
 
-interface carouselImage {
+interface carouselData {
+  slideTitle: string,
+  slideDes: string,
   imageSrc: string,
   imageAlt: string,
 }
@@ -11,21 +13,30 @@ interface carouselImage {
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css']
 })
+
 export class BannerComponent implements OnInit {
 
-  @Input() images: carouselImage[] = []
-  @Input() indicators = true;
-  @Input() controls = true;
-
-  selectedIndex = 0;
-
-  selectImage(index: number): void {
-    this.selectedIndex = index
-  }
+  @Input() bannerInfo: carouselData[] = []
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  data: any
+
+  activeSlides?: SlidesOutputData;
+  getPassedData(data: SlidesOutputData) {
+    this.activeSlides = data;
+    console.log(data.startPosition);
+    this.data = data.startPosition;
+  }
+
+  init: any
+
+  getData(init: SlidesOutputData) {
+    console.log(init.startPosition);
+    this.init = init.startPosition;
   }
 
   customOptions: OwlOptions = {
@@ -50,6 +61,6 @@ export class BannerComponent implements OnInit {
         items: 1
       }
     },
-    nav: true
+    nav: false
   }
 }
