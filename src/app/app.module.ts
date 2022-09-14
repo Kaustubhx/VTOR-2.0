@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { BannerComponent } from './banner/banner.component'
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent, 
+    BannerComponent,
+    ProductsComponent, 
   ],
   imports: [
     BrowserModule,

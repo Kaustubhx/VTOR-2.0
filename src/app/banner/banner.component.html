@@ -3,8 +3,8 @@
     <div id="slider_Backgrounds" class="h-full w-full absolute -z-10">
         <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
             class="absolute h-[85vh] w-full object-contain -z-10" alt="Slide1 Clouds">
-        <img [ngClass]="{'!block' : data === 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png" alt=""
-            class="hidden h-[85vh] w-full object-contain absolute -z-10">
+        <img [ngClass]="{'!block' : data === 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png" alt="slide3"
+            class="hidden h-[85vh] lg:h-screen w-full lg:w-[118%] object-contain absolute -z-10">
     </div>
     <div id="bannerContent" class="text-center mt-10">
 
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div *ngIf="data == 1" id="slide2"
-                            class="absolute flex flex-col items-center justify-center h-[60vh] w-[38vw]">
+                            class="absolute flex flex-col items-center justify-center h-[60vh] w-[38vw] ml-8">
                             <div id="slide2_Content" class="max-w-sm">
                                 <div id="slide2_Info" class="text-left space-y-6 tracking-wider text-primary_text">
                                     <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
@@ -40,8 +40,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div *ngIf="data == 2" id="slide3">
-                            <div id="slide3_Content" class="mx-6 flex flex-col items-start space-y-6">
+                        <div *ngIf="data === 2" id="slide3" class="">
+                            <div class="slide3_Content lg:slide3_ContentLG xl:w-[42rem] xl:h-[42rem]">
                                 <div id="slide3_Info" class="max-w-lg text-left text-primary_text ">
                                     <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
                                     <p class="">{{detail.slideDes}}</p>
@@ -49,8 +49,9 @@
                                 <button class="bg-[#25D366] rounded-full p-2 px-9 text-white">Contact US</button>
                             </div>
                         </div>
-                        <img [ngClass]="{'!inline-block h-[26rem]' : data == 2}" [src]="image.imageSrc"
-                            [alt]="image.imageAlt" class="md:!w-fit !block !mx-auto !object-contain mt-8 -z-10">
+                        <img [ngClass]="{'!inline-block h-[26rem] xl:h-[45rem] lg:!mr-[36rem]' : data === 2}"
+                            [src]="image.imageSrc" [alt]="image.imageAlt"
+                            class="md:!w-fit !block !mx-auto !object-contain mt-8 -z-10">
                     </ng-template>
                 </ng-container>
 
