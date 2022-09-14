@@ -17,6 +17,10 @@
         @apply mx-6 flex flex-col items-start space-y-6 justify-center
     }
 
+    .slide3_ContentMD {
+        @apply absolute right-0 w-[25rem] h-96
+    }
+
     .slide3_ContentLG {
         @apply absolute right-0 w-[36rem] h-96 
     }

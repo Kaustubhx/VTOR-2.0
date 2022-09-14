@@ -1,10 +1,10 @@
-<div id="banner" class="h-[85vh] xl:h-100vh ">
+<div id="banner" class="h-[85vh] md:h-auto xl:h-100vh ">
 
     <div id="slider_Backgrounds" class="h-full w-full absolute -z-10">
         <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
             class="absolute h-[85vh] w-full object-contain -z-10" alt="Slide1 Clouds">
         <img [ngClass]="{'!block' : data === 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png" alt="slide3"
-            class="hidden h-[85vh] lg:h-screen w-full lg:w-[118%] object-contain absolute -z-10">
+            class="hidden h-[85vh] md:h-[68vh] lg:h-screen w-full lg:w-[118%] object-contain absolute -z-10">
     </div>
     <div id="bannerContent" class="text-center mt-10">
 
@@ -15,16 +15,17 @@
                 <ng-container *ngFor="let image of bannerInfo; let detail of bannerInfo">
                     <ng-template carouselSlide class="relative">
                         <div [ngClass]="{'hidden': init != 0 || data > 0}" id="slide1_Content"
-                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-md lg:max-w-lg xl:max-w-3xl">
+                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-3xl">
                             <div id="slide_Info" class="inline-flex flex-col space-y-4 text-primary_text tracking-wide">
                                 <h1 class="font-bold text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
                                 <p class="">{{detail.slideDes}}</p>
                             </div>
-                            <div id="slide1_Buttons" class="inline-flex flex-col space-y-6 mt-6 max-w-xs">
-                                <button class="bg-yellow-400 p-2 px-2 rounded-full text-white font-medium">Learn
+                            <div id="slide1_Buttons"
+                                class="inline-flex flex-col items-center justify-center md:flex-row space-y-6 md:space-y-0 md:space-x-2 mt-6 max-w-xs md:max-w-lg mb-8">
+                                <button class="bg-yellow-400 py-2 px-7 rounded-full text-white font-medium">Learn
                                     More</button>
                                 <button
-                                    class="border-2 p-2 px-9 border-sky-500 rounded-full text-sky-500 font-medium">Get
+                                    class="border-2 p-2 px-9 md:px-11 border-sky-500 rounded-full text-sky-500 font-medium">Get
                                     Started Now</button>
                             </div>
                         </div>
@@ -41,7 +42,8 @@
                             </div>
                         </div>
                         <div *ngIf="data === 2" id="slide3" class="">
-                            <div class="slide3_Content lg:slide3_ContentLG xl:w-[42rem] xl:h-[42rem]">
+                            <div
+                                class="slide3_Content md:slide3_ContentMD lg:slide3_ContentLG xl:w-[42rem] xl:h-[42rem]">
                                 <div id="slide3_Info" class="max-w-lg text-left text-primary_text ">
                                     <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
                                     <p class="">{{detail.slideDes}}</p>
@@ -49,9 +51,9 @@
                                 <button class="bg-[#25D366] rounded-full p-2 px-9 text-white">Contact US</button>
                             </div>
                         </div>
-                        <img [ngClass]="{'!inline-block h-[26rem] xl:h-[45rem] lg:!mr-[36rem]' : data === 2}"
+                        <img [ngClass]="{'!inline-block h-[26rem] md:h-80 xl:h-[45rem] md:!mr-96 md:!mt-9 lg:!mr-[36rem]' : data === 2}"
                             [src]="image.imageSrc" [alt]="image.imageAlt"
-                            class="md:!w-fit !block !mx-auto !object-contain mt-8 -z-10">
+                            class="md:!w-fit !block !mx-auto !object-contain -z-10">
                     </ng-template>
                 </ng-container>
 
