@@ -1,5 +1,5 @@
-<div id="prodcuts" class="pt-10 px-8">
-    <ng-container *ngFor="let singleProduct of products" class="flex flex-col">
+<div id="prodcuts" class="pt-10 px-24 flex flex-col lg:flex-row items-center lg:justify-evenly">
+    <ng-container *ngFor="let singleProduct of products" class="flex flex-col lg:space-x-9">
         <Product [product]="singleProduct"></Product>
     </ng-container>
 </div>
