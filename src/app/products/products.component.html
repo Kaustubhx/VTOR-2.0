@@ -1,6 +1,5 @@
-<div id="prodcuts">
-    <p>products works!</p>
-    <ng-container *ngFor="let singleProduct of products">
-        <Product></Product>
+<div id="prodcuts" class="pt-10 px-8">
+    <ng-container *ngFor="let singleProduct of products" class="flex flex-col">
+        <Product [product]="singleProduct"></Product>
     </ng-container>
 </div>
