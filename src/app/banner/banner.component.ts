@@ -39,7 +39,7 @@ export class BannerComponent implements OnInit {
     this.init = init.startPosition;
   }
 
-  customOptions: OwlOptions = {
+  bannerOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,

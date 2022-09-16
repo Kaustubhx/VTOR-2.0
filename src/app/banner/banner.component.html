@@ -10,7 +10,7 @@
 
         <div id="banner-wrapper">
 
-            <owl-carousel-o [options]="customOptions" (initialized)="getData($event)"
+            <owl-carousel-o [options]="bannerOptions" (initialized)="getData($event)"
                 (translated)="getPassedData($event)">
                 <ng-container *ngFor="let image of bannerInfo; let detail of bannerInfo">
                     <ng-template carouselSlide class="relative">
