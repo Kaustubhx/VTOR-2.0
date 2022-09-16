@@ -10,6 +10,8 @@ import { BannerComponent } from './banner/banner.component'
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
+import { ClientReviewsComponent } from './client-reviews/client-reviews.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { ProductComponent } from './product/product.component';
     BannerComponent,
     ProductsComponent,
     ProductComponent,
+    ClientReviewsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

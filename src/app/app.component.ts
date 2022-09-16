@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,5 +27,26 @@ export class AppComponent {
       imageSrc: 'https://html.crumina.net/html-utouch/img/slides2.png',
       imageAlt: 'slide2'
     }
+  ]
+
+  clientData = [
+    {
+      clientImg: 'https://www.vtorlabs.com/assets/user1.png',
+      imageAlt: 'Meet Mehta profile',
+      clientName: 'Meet Mehta',
+      clientSaying: '“ They understand the business scenerio and provide solution thats really effective and satisfying ”',
+    },
+    {
+      clientImg: 'https://www.vtorlabs.com/assets/user2.png',
+      imageAlt: 'Neelam Shetty profile',
+      clientName: 'Neelam Shetty',
+      clientSaying: "“ VTOR Labs resolve's your business problem real fast with utmost quality...”",
+    },
+    {
+      clientImg: 'https://www.vtorlabs.com/assets/user1.jpg',
+      imageAlt: 'Hanvant Gadhvi profile',
+      clientName: 'Hanvant Gadhvi',
+      clientSaying: '“ Just like our name they did an unbelievable job really happy with the quality service by VTOR Labs ”',
+    },
   ]
 }

@@ -28,7 +28,8 @@
 </div>
 
 <div id="vtorOverview" class="bg-[#273f5b] py-8">
-    <div id="vtorStats" class="grid lg:flex md:grid-cols-2 items-center justify-center space-y-9 lg:space-y-0 lg:justify-evenly">
+    <div id="vtorStats"
+        class="grid lg:flex md:grid-cols-2 items-center justify-center space-y-9 lg:space-y-0 lg:justify-evenly lg:h-48">
         <div id="vtorCodes" class="text-center">
             <span class="text-yellow-400 font-semibold text-2xl lg:text-3xl">7642</span>
             <p class="text-white font-medium text-xl">Line of codes</p>
@@ -45,12 +46,16 @@
             <span class="text-yellow-400 font-semibold text-2xl lg:text-3xl">7 M+</span>
             <p class="text-white font-medium text-xl">Downloads</p>
         </div>
-        <div id="vtorAbout" class="col-start-1 col-end-3 text-center lg:text-left max-w-xs md:max-w-none lg:max-w-xs space-y-2">
+        <div id="vtorAbout"
+            class="md:col-start-1 md:col-end-3 text-center lg:text-left max-w-xs md:max-w-none lg:max-w-xs space-y-2">
             <h1 class="text-white font-semibold ">VTOR is an awesome start-up</h1>
             <p class="text-white/50 text-sm font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy euismod.</p>
         </div>
     </div>
 </div>
+
+<Clientreviews [labReview]="clientData"></Clientreviews>
+<Footer></Footer>
 
 <router-outlet></router-outlet>
