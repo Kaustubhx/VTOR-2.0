@@ -1,0 +1,35 @@
+<div id="header" class="px-5 lg:px-8 py-3 flex items-center justify-between xl:justify-around shadow-md lg:h-24">
+    <div id="logo" class="inline-flex items-center font-medium space-x-2">
+        <img src="https://www.vtorlabs.com/assets/logo.png" alt="Lab Logo" class="h-12 w-12 lg:w-16 lg:h-16">
+        <p>
+            <span class="font-extrabold text-lg">Vision</span> <br>
+            to
+            <span class="font-bold text-[#0082d7]">Reality</span>
+        </p>
+    </div>
+    <button class="lg:hidden">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <ul id="menu">
+        <li id="menuList" class="hidden font-semibold lg:flex lg:items-center text-[#839dbc] relative">
+            <a href="" class="hover:text-[#0083ff]">Home</a>
+            <button href="" class="hover:text-[#0083ff] ml-14 inline-flex items-center">Company
+                <mat-icon class="">arrow_drop_down</mat-icon>
+            </button>
+            <div id="dropdownContent" class="absolute hidden">
+                <a href="" routerLink="/about" routerLinkActive="active">About Us</a>
+                <a href="">Products</a>
+                <a href="">Testimonials</a>
+            </div>
+            <a href="" class="hover:text-[#0083ff] ml-14">Products</a>
+            <a href="" class="hover:text-[#0083ff] ml-14">Contact</a>
+        </li>
+    </ul>
+
+    <div id="mobile__Menu" class="hidden">
+        <a href="">Home</a>
+        <a href="">Company</a>
+        <a href="">Products</a>
+        <a href="">Contact</a>
+    </div>
+</div>

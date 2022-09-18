@@ -22,7 +22,7 @@
     }
 
     .slide3_ContentLG {
-        @apply absolute right-0 w-[36rem] h-96 
+        @apply absolute right-0 w-[36rem] h-96
     }
 }
 
@@ -34,3 +34,6 @@ body {
 }
 
 
+
+
+.menuList:hover .dropdownContent {display: block;}

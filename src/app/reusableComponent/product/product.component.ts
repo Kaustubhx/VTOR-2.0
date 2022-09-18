@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { product } from '../interfaces/product';
+import { product } from '../../interfaces/product';
 
 @Component({
   selector: 'Product',
