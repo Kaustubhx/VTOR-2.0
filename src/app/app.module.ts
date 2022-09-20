@@ -12,7 +12,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './reusableComponent/product/product.component';
 import { ClientReviewsComponent } from './components/client-reviews/client-reviews.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
     ProductComponent,
     ClientReviewsComponent,
     FooterComponent,
+    HomepageComponent,
     AboutusComponent,
   ],
   imports: [
