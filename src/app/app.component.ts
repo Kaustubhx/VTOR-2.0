@@ -49,4 +49,5 @@ export class AppComponent {
       clientSaying: '“ Just like our name they did an unbelievable job really happy with the quality service by VTOR Labs ”',
     },
   ]
+
 }
