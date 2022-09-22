@@ -68,7 +68,7 @@ export class AboutusComponent implements OnInit {
         items: 1
       }
     },
-    nav: false
+    nav: true
   }
 }
 

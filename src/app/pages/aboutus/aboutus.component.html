@@ -1,7 +1,7 @@
 <Header class="bg-[#121921]"></Header>
 <div id="aboutWrapper" class="">
     <div id="aboutLabs" class="px-5 relative">
-        <img src="https://html.crumina.net/html-utouch/img/clouds19.png" alt="" class="absolute">
+        <img src="https://html.crumina.net/html-utouch/img/clouds19.png" alt="" class="absolute -z-10">
         <div id="companyContainer" class="flex flex-col items-start">
             <div id="shortIntro" class=" pt-16 space-y-7 mb-8 text-start">
                 <p class="text-[#4b5d73] font-medium">COMPANY</p>
@@ -50,24 +50,36 @@
 
     <div id="labsStory-slider" class="py-9 bg-[#ecf5fe]">
         <div id="container" class="text-primary_text px-5">
-            <p>Short Story About Our Labs</p>
+            <h2 class="text-primary_text text-2xl text-center font-medium mx-4 pb-7">Short Story About Our Labs</h2>
             <owl-carousel-o [options]="storySliderOptions">
 
                 <ng-container *ngFor="let aboutLab of labsStoryData">
                     <ng-template carouselSlide>
-                        <div id="shortStory_images" class="w-[100px] h-[100px] text-center mx-auto">
-                            <img [src]="aboutLab.yearImg" class="h-10 rounded-full"
-                                [ngStyle]="{background: aboutLab.bgColor}">
+                        <div id="shortStory_images" [ngStyle]="{background: aboutLab.bgColor}"
+                            class="w-[100px] h-[100px] text-center mx-auto mb-4 rounded-full leading-[95px]">
+                            <img [src]="aboutLab.yearImg" class="h-10 w-10 !inline-block">
                         </div>
-                        <div id="shortStory_info">
-                            <p>{{aboutLab.year}}</p>
-                            <p>{{aboutLab.yearTitle}}</p>
-                            <p>{{aboutLab.yearInfo}}</p>
+                        <div id="shortStory_info" class="flex flex-col text-center space-y-4">
+                            <p [ngStyle]="{color: aboutLab.bgColor}" class="font-medium">{{aboutLab.year}}</p>
+                            <p class="font-medium">{{aboutLab.yearTitle}}</p>
+                            <p class="text-sm">{{aboutLab.yearInfo}}</p>
                         </div>
                     </ng-template>
                 </ng-container>
 
             </owl-carousel-o>
+        </div>
+    </div>
+
+    <div id="caseItems" class="pt-9">
+        <div id="caseItems_Intro" class="px-5 text-[#273f5b] w-[22rem] space-y-6">
+            <p class="text-lg font-medium">Our Works</p>
+            <h2 class="text-2xl font-medium">Let Everyone Know Why We are the Best</h2>
+            <p class="text-sm leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum
+                excepturi
+                enim provident autem
+                accusamus a officia quia?</p>
+            <button class="border-2 border-sky-500 text-sky-600 font-semibold py-3 px-9 rounded-full text-xs">ALL WORKS</button>
         </div>
     </div>
 </div>
