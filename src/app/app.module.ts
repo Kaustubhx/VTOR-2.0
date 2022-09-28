@@ -15,6 +15,7 @@ import { ProductsComponent } from './components/homeComponents/products/products
 import { ClientReviewsComponent } from './components/homeComponents/client-reviews/client-reviews.component';
 import { FooterComponent } from './components/homeComponents/footer/footer.component';
 import { StorySliderComponent } from './components/aboutComponents/story-slider/story-slider.component';
+import { CasesliderComponent } from './components/aboutComponents/caseslider/caseslider.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { StorySliderComponent } from './components/aboutComponents/story-slider/
     HomepageComponent,
     AboutusComponent,
     StorySliderComponent,
+    CasesliderComponent,
   ],
   imports: [
     BrowserModule,
