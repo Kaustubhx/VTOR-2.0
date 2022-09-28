@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'Aboutus',
-  templateUrl: './aboutus.component.html',
-  styleUrls: ['./aboutus.component.css']
+  selector: 'StorySlider',
+  templateUrl: './story-slider.component.html',
+  styleUrls: ['./story-slider.component.css']
 })
-export class AboutusComponent implements OnInit {
+export class StorySliderComponent implements OnInit {
 
   labsStoryData = [
     {
@@ -39,29 +39,6 @@ export class AboutusComponent implements OnInit {
     },
   ]
 
-  caseItemsData = [
-    {
-      bgColor: '#007bef',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
-      caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
-    },
-    {
-      bgColor: '#af23e0',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
-    },
-    {
-      bgColor: '#007bef',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case1.jpg',
-      caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
-    },
-    {
-      bgColor: '#af23e0',
-      caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
-    },
-  ]
-
 
 
   constructor() { }
@@ -69,7 +46,8 @@ export class AboutusComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  caseSliderOptions: OwlOptions = {
+
+  storySliderOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
@@ -91,9 +69,7 @@ export class AboutusComponent implements OnInit {
         items: 1
       }
     },
-    nav: false
+    nav: true
   }
 
-  
 }
-

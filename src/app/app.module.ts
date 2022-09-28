@@ -3,17 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { BannerComponent } from './components/banner/banner.component'
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './reusableComponent/product/product.component';
-import { ClientReviewsComponent } from './components/client-reviews/client-reviews.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { HeaderComponent } from './components/homeComponents/header/header.component';
+import { BannerComponent } from './components/homeComponents/banner/banner.component';
+import { ProductsComponent } from './components/homeComponents/products/products.component';
+import { ClientReviewsComponent } from './components/homeComponents/client-reviews/client-reviews.component';
+import { FooterComponent } from './components/homeComponents/footer/footer.component';
+import { StorySliderComponent } from './components/aboutComponents/story-slider/story-slider.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
     FooterComponent,
     HomepageComponent,
     AboutusComponent,
+    StorySliderComponent,
   ],
   imports: [
     BrowserModule,
