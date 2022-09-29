@@ -49,7 +49,7 @@ export class CasesliderComponent implements OnInit {
         items: 1
       },
       400: {
-        items: 1
+        items: 2
       },
       740: {
         items: 1
