@@ -63,7 +63,7 @@ export class StorySliderComponent implements OnInit {
         items: 2
       },
       740: {
-        items: 1
+        items: 4
       },
     },
     nav: true
