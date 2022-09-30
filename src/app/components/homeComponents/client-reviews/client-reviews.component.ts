@@ -15,7 +15,7 @@ interface reviewData {
 })
 export class ClientReviewsComponent implements OnInit {
 
-  @Input() labReview: reviewData[] =[]
+  @Input() labReview: reviewData[] = []
 
 
   constructor() { }
@@ -26,6 +26,7 @@ export class ClientReviewsComponent implements OnInit {
   reviewOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
+    // autoWidth: false,
     touchDrag: true,
     pullDrag: true,
     dots: false,
