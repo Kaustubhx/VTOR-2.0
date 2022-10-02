@@ -32,12 +32,12 @@ export class ProductsComponent implements OnInit {
     },
     {
       productImg: "https://html.crumina.net/html-utouch/svg-icons/cloud-computing%20(1).svg",
-      productTitle: "Push Notification",
+      productTitle: "Cloud Integration",
       prodcutDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
     },
     {
       productImg: "https://html.crumina.net/html-utouch/svg-icons/chat1.svg",
-      productTitle: "Push Notification",
+      productTitle: "Private Chat",
       prodcutDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
     },
   ]
