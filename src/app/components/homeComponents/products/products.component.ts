@@ -25,6 +25,21 @@ export class ProductsComponent implements OnInit {
       productTitle: "Quick Settings",
       prodcutDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
     },
+    {
+      productImg: "https://html.crumina.net/html-utouch/svg-icons/alarm.svg",
+      productTitle: "Push Notification",
+      prodcutDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+    },
+    {
+      productImg: "https://html.crumina.net/html-utouch/svg-icons/cloud-computing%20(1).svg",
+      productTitle: "Push Notification",
+      prodcutDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+    },
+    {
+      productImg: "https://html.crumina.net/html-utouch/svg-icons/chat1.svg",
+      productTitle: "Push Notification",
+      prodcutDes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam."
+    },
   ]
 
   constructor() { }

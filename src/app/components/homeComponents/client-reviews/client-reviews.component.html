@@ -4,7 +4,7 @@
     <div id="clientReview" class="flex flex-col ">
         <owl-carousel-o [options]="reviewOptions">
 
-            <ng-container *ngFor="let clientInfo of labReview">
+            <ng-container *ngFor="let clientInfo of labReview"> 
                 <ng-template carouselSlide>
                     <div id="clientSlide" class="flex flex-col items-center text-center px-4 pt-2 lg:max-w-md mx-auto">
                         <img [src]="clientInfo.clientImg" [alt]="clientInfo.imageAlt" class="h-14 !w-14">

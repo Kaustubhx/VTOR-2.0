@@ -9,7 +9,7 @@ interface reviewData {
 }
 
 @Component({
-  selector: 'Clientreviews',
+  selector: 'ClientReviews',
   templateUrl: './client-reviews.component.html',
   styleUrls: ['./client-reviews.component.css']
 })
