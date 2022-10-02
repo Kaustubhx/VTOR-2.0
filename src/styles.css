@@ -30,10 +30,5 @@ html,
 body {
     height: 100%;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
-
-
-
-
-.menuList:hover .dropdownContent {display: block;}
