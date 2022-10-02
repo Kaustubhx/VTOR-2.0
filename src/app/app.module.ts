@@ -14,9 +14,9 @@ import { BannerComponent } from './components/homeComponents/banner/banner.compo
 import { ProductsComponent } from './components/homeComponents/products/products.component';
 import { ClientReviewsComponent } from './components/homeComponents/client-reviews/client-reviews.component';
 import { StorySliderComponent } from './components/aboutComponents/story-slider/story-slider.component';
-import { CasesliderComponent } from './components/aboutComponents/caseslider/caseslider.component';
+import { CasesliderComponent } from './components/homeComponents/caseslider/caseslider.component';
 import { FooterComponent } from './reusableComponent/footer/footer.component';
-import { ProductpageComponent } from './pages/productpage/productpage.component';
+import { MyybaproductComponent } from './pages/myybaproduct/myybaproduct.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { ProductpageComponent } from './pages/productpage/productpage.component'
     AboutusComponent,
     StorySliderComponent,
     CasesliderComponent,
-    ProductpageComponent,
+    MyybaproductComponent,
   ],
   imports: [
     BrowserModule,
