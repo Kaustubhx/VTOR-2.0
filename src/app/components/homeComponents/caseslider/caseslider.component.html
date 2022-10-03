@@ -26,7 +26,7 @@
                                 <img [src]="productInfo.caseItemImg" class="!inline-block">
                             </div>
                             <div id="itemBg" [ngStyle]="{background: productInfo.bgColor}"
-                                class="absolute bottom-0 left-0 w-[95%] h-3/4 -z-10 rounded-xl">
+                                class="absolute bottom-0 left-0 w-[98%] lg:w-[95%] h-3/4 -z-10 rounded-xl">
                             </div>
                             <div id="productContent"
                                 class="px-7 pb-7 lg:p-0 text-white lg:max-w-[290px] lg:inline-block lg:relative lg:top-[85px]">
@@ -35,8 +35,8 @@
                                 </div>
                                 <div routerLink={{productInfo.productLink}} id="caseRedirect"
                                     class="cursor-pointer inline-flex">
-                                    <p class="text-base inline-flex items-center font-medium">VIEW CASE <mat-icon
-                                            class="ml-2">
+                                    <p class="text-sm inline-flex items-center font-bold">VIEW CASE <mat-icon
+                                            class="ml-2 text-sm">
                                             arrow_forward_ios</mat-icon>
                                     </p>
                                 </div>
