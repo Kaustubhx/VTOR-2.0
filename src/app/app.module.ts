@@ -17,6 +17,7 @@ import { StorySliderComponent } from './components/aboutComponents/story-slider/
 import { CasesliderComponent } from './components/homeComponents/caseslider/caseslider.component';
 import { FooterComponent } from './reusableComponent/footer/footer.component';
 import { MyybaproductComponent } from './pages/myybaproduct/myybaproduct.component';
+import { ScreenshotsComponent } from './reusableComponent/screenshots/screenshots.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MyybaproductComponent } from './pages/myybaproduct/myybaproduct.compone
     StorySliderComponent,
     CasesliderComponent,
     MyybaproductComponent,
+    ScreenshotsComponent,
   ],
   imports: [
     BrowserModule,
