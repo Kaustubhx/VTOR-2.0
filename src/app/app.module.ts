@@ -18,6 +18,8 @@ import { CasesliderComponent } from './components/homeComponents/caseslider/case
 import { FooterComponent } from './reusableComponent/footer/footer.component';
 import { MyybaproductComponent } from './pages/myybaproduct/myybaproduct.component';
 import { ScreenshotsComponent } from './reusableComponent/screenshots/screenshots.component';
+import { GplaybuttonComponent } from './reusableComponent/gplaybutton/gplaybutton.component';
+import { VtorappComponent } from './reusableComponent/vtorapp/vtorapp.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ScreenshotsComponent } from './reusableComponent/screenshots/screenshot
     CasesliderComponent,
     MyybaproductComponent,
     ScreenshotsComponent,
+    GplaybuttonComponent,
+    VtorappComponent,
   ],
   imports: [
     BrowserModule,
