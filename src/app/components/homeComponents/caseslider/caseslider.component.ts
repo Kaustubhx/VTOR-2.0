@@ -17,6 +17,7 @@ export class CasesliderComponent implements OnInit {
     },
     {
       bgColor: '#007bef',
+      productLink: '/fitappcasedetails',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
       caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
     },
