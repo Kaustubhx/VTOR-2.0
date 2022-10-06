@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { vtorApp } from 'src/app/interfaces/vtorAppDetails';
 
 @Component({
-  selector: 'app-vtorapp',
+  selector: 'Vtorapp',
   templateUrl: './vtorapp.component.html',
   styleUrls: ['./vtorapp.component.css']
 })
