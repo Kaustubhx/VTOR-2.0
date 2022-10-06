@@ -1,4 +1,5 @@
 export interface vtorApp {
+    bgColor: string,
     appHeading: string,
     appNote: string,
     appDemoImage: string,
@@ -12,10 +13,6 @@ export interface vtorApp {
     appPlusPoint_2: string,
     appPlusPoint_3: string,
     appPlusPoint_4: string,
-    appScreenshot_1: string,
-    appScreenshot_2: string,
-    appScreenshot_3: string,
-    appScreenshot_4: string,
     appName: string,
     appShortDesc: string,
 }
