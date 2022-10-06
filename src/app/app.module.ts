@@ -20,6 +20,8 @@ import { MyybaproductComponent } from './pages/myybaproduct/myybaproduct.compone
 import { ScreenshotsComponent } from './reusableComponent/screenshots/screenshots.component';
 import { GplaybuttonComponent } from './reusableComponent/gplaybutton/gplaybutton.component';
 import { VtorappComponent } from './reusableComponent/vtorapp/vtorapp.component';
+import { FitappspageComponent } from './pages/fitappspage/fitappspage.component';
+import { AppScreenshotsComponent } from './components/appComponents/app-screenshots/app-screenshots.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { VtorappComponent } from './reusableComponent/vtorapp/vtorapp.component'
     ScreenshotsComponent,
     GplaybuttonComponent,
     VtorappComponent,
+    FitappspageComponent,
+    AppScreenshotsComponent,
   ],
   imports: [
     BrowserModule,
