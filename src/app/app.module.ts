@@ -22,6 +22,7 @@ import { GplaybuttonComponent } from './reusableComponent/gplaybutton/gplaybutto
 import { VtorappComponent } from './reusableComponent/vtorapp/vtorapp.component';
 import { FitappspageComponent } from './pages/fitappspage/fitappspage.component';
 import { AppScreenshotsComponent } from './components/appComponents/app-screenshots/app-screenshots.component';
+import { ContactpageComponent } from './pages/contactpage/contactpage.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { AppScreenshotsComponent } from './components/appComponents/app-screensh
     VtorappComponent,
     FitappspageComponent,
     AppScreenshotsComponent,
+    ContactpageComponent,
   ],
   imports: [
     BrowserModule,

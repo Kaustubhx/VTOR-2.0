@@ -1,6 +1,6 @@
 <div id="labsStory-slider" class="py-9 bg-[#ecf5fe]">
     <div id="container" class="text-primary_text px-5 max-w-7xl mx-auto">
-        <h2 class="text-primary_text text-2xl lg:text-3xl text-center font-medium mx-4 pb-7 lg:pb-16">Short Story About Our Labs</h2>
+        <h2 class="text-primary_text text-2xl lg:text-4xl text-center font-bold mx-4 lg:mx-auto pb-7 lg:pb-16 w-96">Short Story About Our Labs</h2>
         <owl-carousel-o [options]="storySliderOptions">
 
             <ng-container *ngFor="let aboutLab of labsStoryData">
@@ -12,8 +12,8 @@
                         </div>
                         <div id="shortStory_info" class="flex flex-col text-center space-y-4">
                             <p [ngStyle]="{color: aboutLab.bgColor}" class="font-medium">{{aboutLab.year}}</p>
-                            <p class="font-medium">{{aboutLab.yearTitle}}</p>
-                            <p class="text-sm">{{aboutLab.yearInfo}}</p>
+                            <p class="font-bold lg:text-lg">{{aboutLab.yearTitle}}</p>
+                            <p class="text-sm lg:text-base">{{aboutLab.yearInfo}}</p>
                         </div>
                     </div>
                 </ng-template>

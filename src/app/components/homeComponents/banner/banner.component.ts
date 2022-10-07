@@ -1,12 +1,6 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SlidesOutputData, OwlOptions } from 'ngx-owl-carousel-o';
-
-interface carouselData {
-  slideTitle: string,
-  slideDes: string,
-  imageSrc: string,
-  imageAlt: string,
-}
+import { carouselData } from 'src/app/interfaces/homecarousel';
 
 @Component({
   selector: 'Banner',
@@ -23,13 +17,13 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  data: any
 
   activeSlides?: SlidesOutputData;
+  data: any;
   getPassedData(data: SlidesOutputData) {
     this.activeSlides = data;
-    console.log(data.startPosition);
     this.data = data.startPosition;
+    console.log(data.startPosition);
   }
 
   init: any

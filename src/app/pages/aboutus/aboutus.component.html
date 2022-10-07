@@ -68,21 +68,22 @@
                 anteposuerit litterarum formas humanitatis per.
             </p>
         </div>
-        <div id="founders-wrap" class="px-5 mt-9">
-            <div id="mainFounders" class="lg:grid lg:grid-flow-col max-w-7xl lg:mx-auto">
+        <div id="team-wrapper" class="px-5 mt-9">
+            <div id="teamContainer" class="lg:grid lg:grid-flow-col lg:grid-rows-2 lg:gap-y-7 max-w-7xl lg:mx-auto">
                 <ng-container *ngFor="let info of vtorTeamData">
-                    <div id="abhiFounder" class="flex flex-col lg:flex-row">
-                        <div id="abhiFounder_img" class="mx-auto">
+                    <div id="teamMember" class="flex flex-col lg:flex-row">
+                        <div id="teamMember_avatar" class="mx-auto">
                             <img src="{{info.memberAvatar}}" class="inline-block">
                         </div>
 
-                        <div id="abhiFounderInfo" class="pt-4 text-secondary_text lg:max-w-[280px]">
+                        <div id="teamMemberInfo" class="pt-4 text-secondary_text lg:max-w-[280px]">
                             <p class="text-pale_slate text-xs font-bold mb-4 uppercase">{{info.memberRole}}</p>
                             <p class="text-lg font-bold mt-3 mb-6">{{info.memberName}}</p>
-                            <p class="text-sm mb-8">{{info.memberIntro}}</p>
-                        </div>
-                        <div id="founder-connect">
+                            <p class="text-sm md:text-base mb-8">{{info.memberIntro}}</p>
 
+                            <div id="member-connect" class="border-2 inline-flex items-center justify-center rounded-full h-8 w-8">
+                                <i class="material-icons cursor-pointer">facebook</i>
+                            </div>
                         </div>
                     </div>
                 </ng-container>

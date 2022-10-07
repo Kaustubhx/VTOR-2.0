@@ -25,6 +25,11 @@
     .ham_menu {
         @apply inline-flex flex-col absolute w-full bg-slate-500 top-20 z-20
     }
+
+    /* Banner Component */
+    .md_slide3 {
+        @apply flex flex-col
+    }
 }
 
 html,

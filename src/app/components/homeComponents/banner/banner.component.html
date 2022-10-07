@@ -30,10 +30,10 @@
                             </div>
                         </div>
                         <div *ngIf="data == 1" id="slide2"
-                            class="absolute flex flex-col items-center justify-center h-[60vh] w-[38vw] ml-8">
+                            class="absolute hidden md:flex flex-col items-center justify-center h-[60vh] md:h-[37vw] w-[38vw] md:w-[45vw] ml-8">
                             <div id="slide2_Content" class="max-w-sm">
                                 <div id="slide2_Info" class="text-left space-y-6 tracking-wider text-primary_text">
-                                    <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
+                                    <h1 class="font-bold text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
                                     <p class="">{{detail.slideDes}}</p>
                                 </div>
                                 <div id="slide2_Buttons">
@@ -42,16 +42,16 @@
                             </div>
                         </div>
                         <div *ngIf="data === 2" id="slide3" class="">
-                            <div
-                                class="slide3_Content md:slide3_ContentMD lg:slide3_ContentLG xl:w-[42rem] xl:h-[42rem]">
+                            <div class="slide3_Content lg:slide3_ContentLG xl:w-[42rem] xl:h-[42rem]">
                                 <div id="slide3_Info" class="max-w-lg text-left text-primary_text ">
-                                    <h1 class="font-medium text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
-                                    <p class="">{{detail.slideDes}}</p>
+                                    <h1 class="font-bold text-3xl xl:text-4xl my-5">{{detail.slideTitle}}</h1>
+                                    <p class="md:text-lg">{{detail.slideDes}}</p>
                                 </div>
                                 <button class="bg-[#25D366] rounded-full p-2 px-9 text-white">Contact US</button>
                             </div>
                         </div>
-                        <img [ngClass]="{'!inline-block h-[26rem] md:h-80 xl:h-[45rem] md:!mr-96 md:!mt-9 lg:!mr-[36rem]' : data === 2}"
+                        <img
+                            [ngClass]="{'!inline-block h-[26rem] md:h-[21rem] xl:h-[45rem] md:!mt-9 lg:!mr-[36rem]' : data === 2}"
                             [src]="image.imageSrc" [alt]="image.imageAlt"
                             class="md:!w-fit !block !mx-auto !object-contain -z-10">
                     </ng-template>
