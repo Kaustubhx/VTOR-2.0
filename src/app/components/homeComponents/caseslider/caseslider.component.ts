@@ -16,7 +16,7 @@ export class CasesliderComponent implements OnInit {
       caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
     },
     {
-      bgColor: '#007bef',
+      bgColor: '#bb26f0',
       productLink: '/fitappcasedetails',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
       caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
@@ -27,7 +27,7 @@ export class CasesliderComponent implements OnInit {
       caseItemNote: 'Investigationes demonstraverunt lectores legere me legunt saepius',
     },
     {
-      bgColor: '#007bef',
+      bgColor: '#bb26f0',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
       caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
     },
@@ -60,7 +60,7 @@ export class CasesliderComponent implements OnInit {
         items: 2
       }
     },
-    nav: true
+    nav: false
   }
 
 }

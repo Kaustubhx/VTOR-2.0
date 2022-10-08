@@ -39,8 +39,8 @@ export class BannerComponent implements OnInit {
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 700,
-    navText: ['<span class="material-icons">arrow_back_ios</span>', '<span class="material-icons">arrow_forward_ios</span>'],
+    navSpeed: 300,
+    navText: ['<i class="material-icons">arrow_back_ios</i>', '<i class="material-icons">arrow_forward_ios</i>'],
     responsive: {
       0: {
         items: 1
@@ -55,6 +55,6 @@ export class BannerComponent implements OnInit {
         items: 1
       }
     },
-    nav: false
+    nav: true,
   }
 }

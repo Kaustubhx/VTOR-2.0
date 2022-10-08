@@ -1,21 +1,18 @@
 <div id="banner" class=" h-[98vh] xl:h-100vh bg-gradient-to-t from-[#ecf5fe]">
 
-    <div id="slider_Backgrounds" class="h-full w-full absolute -z-10">
+    <div id="slider_Backgrounds" class="h-[92%] w-full absolute -z-10">
         <img [ngClass]="{'hidden' : data > 0}" src="https://html.crumina.net/html-utouch/img/clouds1.png"
             class="absolute h-[85vh] w-full object-contain -z-10" alt="Slide1 Clouds">
         <img [ngClass]="{'!block' : data === 2}" src="https://html.crumina.net/html-utouch/img/clouds3.png" alt="slide3"
             class="hidden h-[85vh] md:h-[68vh] lg:h-screen w-full lg:w-[118%] object-contain absolute -z-10">
     </div>
     <div id="bannerContent" class="text-center pt-10">
-
-        <div id="banner-wrapper" class="">
-
-            <owl-carousel-o [options]="bannerOptions" (initialized)="getData($event)"
-                (translated)="getPassedData($event)">
-                <ng-container *ngFor="let image of bannerInfo; let detail of bannerInfo">
-                    <ng-template carouselSlide class="relative">
+        <owl-carousel-o [options]="bannerOptions" (initialized)="getData($event)" (translated)="getPassedData($event)">
+            <ng-container *ngFor="let image of bannerInfo; let detail of bannerInfo">
+                <ng-template carouselSlide class="relative">
+                    <div id="banner-wrapper" class="">
                         <div [ngClass]="{'hidden': init != 0 || data > 0}" id="slide1_Content"
-                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-3xl">
+                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-3xl pt-16">
                             <div id="slide_Info" class="inline-flex flex-col space-y-4 text-primary_text tracking-wide">
                                 <h1 class="font-bold text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
                                 <p class="">{{detail.slideDes}}</p>
@@ -30,11 +27,11 @@
                             </div>
                         </div>
                         <div *ngIf="data == 1" id="slide2"
-                            class="absolute hidden md:flex flex-col items-center justify-center h-[60vh] md:h-[37vw] w-[38vw] md:w-[45vw] ml-8">
-                            <div id="slide2_Content" class="max-w-sm">
+                            class="mx-5 md:absolute md:flex flex-col items-center justify-center md:h-[37vw] md:w-[45vw] ml-8 pt-16">
+                            <div id="slide2_Content" class="max-w-sm lg:max-w-md">
                                 <div id="slide2_Info" class="text-left space-y-6 tracking-wider text-primary_text">
-                                    <h1 class="font-bold text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
-                                    <p class="">{{detail.slideDes}}</p>
+                                    <h1 class="font-bold text-3xl lg:text-4xl">{{detail.slideTitle}}</h1>
+                                    <p class="lg:text-lg">{{detail.slideDes}}</p>
                                 </div>
                                 <div id="slide2_Buttons">
 
@@ -47,17 +44,17 @@
                                     <h1 class="font-bold text-3xl xl:text-4xl my-5">{{detail.slideTitle}}</h1>
                                     <p class="md:text-lg">{{detail.slideDes}}</p>
                                 </div>
-                                <button class="bg-[#25D366] rounded-full p-2 px-9 text-white">Contact US</button>
+                                <button routerLink="/contactus"
+                                    class="bg-[#25D366] rounded-full p-2 px-9 text-white">Contact US</button>
                             </div>
                         </div>
-                        <img
-                            [ngClass]="{'!inline-block h-[26rem] md:h-[21rem] xl:h-[45rem] md:!mt-9 lg:!mr-[36rem]' : data === 2}"
+                        <img [ngClass]="{'!inline-block h-[26rem] md:h-[21rem] xl:h-[45rem] md:!mt-9 lg:!mr-[36rem]' : data === 2}"
                             [src]="image.imageSrc" [alt]="image.imageAlt"
                             class="md:!w-fit !block !mx-auto !object-contain -z-10">
-                    </ng-template>
-                </ng-container>
+                    </div>
+                </ng-template>
+            </ng-container>
 
-            </owl-carousel-o>
-        </div>
+        </owl-carousel-o>
     </div>
 </div>
