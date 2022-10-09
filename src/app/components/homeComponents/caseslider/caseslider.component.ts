@@ -19,7 +19,7 @@ export class CasesliderComponent implements OnInit {
       bgColor: '#bb26f0',
       productLink: '/fitappcasedetails',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
+      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus',
     },
     {
       bgColor: '#007bef',
@@ -29,7 +29,7 @@ export class CasesliderComponent implements OnInit {
     {
       bgColor: '#bb26f0',
       caseItemImg: 'https://html.crumina.net/html-utouch/img/case2.jpg',
-      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus parum',
+      caseItemNote: 'Mirum est notare quam littera gothica, quam nunc putamus',
     },
   ]
 

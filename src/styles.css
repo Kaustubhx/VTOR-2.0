@@ -41,7 +41,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.owl-carousel .owl-stage-outer {
+/* .owl-carousel .owl-stage-outer {
     height: 88vh !important;
 }
 
@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     position: relative;
     bottom: 25rem;
-}
+} */
 
 /* @media only screen and (min-width: 768px) {
     bottom: 20rem;

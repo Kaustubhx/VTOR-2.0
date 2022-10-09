@@ -12,7 +12,7 @@
                 <ng-template carouselSlide class="relative">
                     <div id="banner-wrapper" class="">
                         <div [ngClass]="{'hidden': init != 0 || data > 0}" id="slide1_Content"
-                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-3xl pt-16">
+                            class="inline-flex items-center justify-start flex-col max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-3xl pt-16 md:pt-0">
                             <div id="slide_Info" class="inline-flex flex-col space-y-4 text-primary_text tracking-wide">
                                 <h1 class="font-bold text-3xl xl:text-4xl">{{detail.slideTitle}}</h1>
                                 <p class="">{{detail.slideDes}}</p>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div *ngIf="data == 1" id="slide2"
-                            class="mx-5 md:absolute md:flex flex-col items-center justify-center md:h-[37vw] md:w-[45vw] ml-8 pt-16">
+                            class="mx-5 md:absolute md:flex flex-col items-center justify-center md:h-[37vw] md:w-[45vw] ml-8 pt-16 md:pt-0">
                             <div id="slide2_Content" class="max-w-sm lg:max-w-md">
                                 <div id="slide2_Info" class="text-left space-y-6 tracking-wider text-primary_text">
                                     <h1 class="font-bold text-3xl lg:text-4xl">{{detail.slideTitle}}</h1>
