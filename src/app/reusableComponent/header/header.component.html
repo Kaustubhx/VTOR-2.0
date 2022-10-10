@@ -1,22 +1,34 @@
-<div id="header" class="px-5 lg:px-8 py-3 flex items-center justify-between xl:justify-around shadow-md lg:h-24">
-    <div routerLink="" id="logo" class="inline-flex items-center font-medium space-x-2 cursor-pointer">
-        <img src="https://www.vtorlabs.com/assets/logo.png" alt="Lab Logo" class="h-12 w-12 lg:w-16 lg:h-16">
-        <p>
-            <span class="font-extrabold text-lg">Vision</span> <br>
-            to
-            <span class="font-bold text-[#0082d7]">Reality</span>
-        </p>
-    </div>
-    <button class="lg:hidden" (click)="toggleMenu()">
-        <i class="material-icons">{{isMenuOpen ? "close" : "menu"}}</i>
-    </button>
-    <ul id="menu" class="nav_menu" [class.ham_menu]="isMenuOpen">
-        <li id="menuList" class="font-bold uppercase text-[#839dbc] relative" [class.ham_menu]="isMenuOpen">
-            <a routerLink="" href="" class="hover:text-[#0083ff]">Home</a>
-            <a routerLink="/about" class="hover:text-[#0083ff] ml-14">Company</a>
-            <a routerLink="/product" href="" class="hover:text-[#0083ff] ml-14">Products</a>
-            <a routerLink="/contactus" href="" class="hover:text-[#0083ff] ml-14">Contact</a>
-        </li>
-    </ul>
+<section class="h-16 lg:h-20 shadow-md">
+    <div class="max-w-[1000px] my-0 mx-auto">
+        <div routerLink='' class="absolute pl-5 float-left uppercase pt-2 cursor-pointer">
+            <img src="https://www.vtorlabs.com/assets/logo.png" alt="Lab Logo" class="h-12 w-12 lg:w-16 lg:h-16">
+        </div>
+        <nav class="float-left">
+            <div class="nav-mobile" (click)="toggleMenu()">
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="45"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </div>
+            <ul class="m-0 p-0" [class.!block]="isMenuOpen">
+                <li>
+                    <a routerLink='' href="" class="text-white lg:text-[#6987ab]">Home</a>
+                </li>
+                <li>
+                    <a routerLink='/about' href="" class="text-white lg:text-[#6987ab]">Company</a>
+                </li>
+                <li>
+                    <a class="text-white lg:text-[#6987ab]">Products</a>
+                </li>
 
-</div>
+                <li>
+                    <a routerLink='/contactus' href="" class="text-white lg:text-[#6987ab]">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
