@@ -36,7 +36,7 @@ export class BannerComponent implements OnInit {
   bannerOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: true,
+  touchDrag: true,
     pullDrag: true,
     dots: false,
     navSpeed: 300,
@@ -55,6 +55,6 @@ export class BannerComponent implements OnInit {
         items: 1
       }
     },
-    nav: true,
+    nav: false,
   }
 }

@@ -1,4 +1,4 @@
-<div id="caseItems" class="pt-9 lg:mx-36">
+<div id="caseItems" class="pt-9 2xl:mx-36 xl:mx-28 lg:mx-20">
     <div id="caseItems_Intro" class="px-5 md:px-9 lg:px-0 text-[#273f5b] w-[22rem] md:w-auto space-y-6">
         <div id="caseItems_contents" class="max-w-xl inline-block mt-16">
             <p class="text-lg font-medium text-pale_slate mb-6">Our Works</p>
@@ -21,16 +21,16 @@
 
                 <ng-container *ngFor="let productInfo of caseItemsData">
                     <ng-template carouselSlide>
-                        <div id="productContainer" class="pt-8">
-                            <div id="productImage" class="inline-block relative mx-10">
+                        <div id="productContainer" class="pt-8 relative">
+                            <div id="productImage" class="inline-block mx-10">
                                 <img [src]="productInfo.caseItemImg" class="!inline-block">
                             </div>
                             <div id="itemBg" [ngStyle]="{background: productInfo.bgColor}"
                                 class="absolute bottom-0 left-0 w-[98%] lg:w-[95%] h-3/4 -z-10 rounded-xl">
                             </div>
                             <div id="productContent"
-                                class="px-7 pb-7 text-white lg:inline-block lg:top-[85px]">
-                                <div id="productDesc" class="py-11 text-lg lg:text-xl tracking-wide font-semibold">
+                                class="px-5 xl:px-0 pb-7 text-white lg:inline-block xl:top-[85px] xl:max-w-[290px] lg:relative">
+                                <div id="productDesc" class="py-11 text-lg lg:text-xl tracking-wide font-bold">
                                     <p>{{productInfo.caseItemNote}}</p>
                                 </div>
                                 <div routerLink={{productInfo.productLink}} id="caseRedirect"
