@@ -14,25 +14,21 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  slideData: any | string = [
+  slideData = [
     {
       bannerId_1: "1",
       slideTitle_1: "We Build Scalable Business Solutions",
       slideDes_1: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       imageSrc_1: 'https://html.crumina.net/html-utouch/img/slides1.png',
       imageAlt_1: 'slide1',
-    },
-    {
       bannerId_2: '2',
       slideTitle_2: "Myybaa store is a product to help small vendors",
-      slideDes_2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat",
+      slideDes_2: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       imageSrc_2: 'https://html.crumina.net/html-utouch/img/clouds2.png',
-      imageAlt_2: 'slide2'
-    },
-    {
+      imageAlt_2: 'slide2',
       bannerId_3: '3',
       slideTitle_3: "We help your vision become into a reality",
-      slideDes_3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat",
+      slideDes_3: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
       imageSrc_3: 'https://html.crumina.net/html-utouch/img/slides2.png',
       imageAlt_3: 'slide3'
     }
