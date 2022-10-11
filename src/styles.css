@@ -31,7 +31,7 @@
 
     /* Banner Component */
     .slide-wrapper {
-        @apply !h-screen flex items-center
+        @apply h-screen flex items-center
     }
 
 
