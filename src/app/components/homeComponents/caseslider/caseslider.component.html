@@ -16,7 +16,7 @@
     </div>
 
     <div id="caseItems_Slider">
-        <div id="container" class="px-5 md:px-9 lg:px-0">
+        <div id="container" class="px-5 !mx-0 md:!px-9 lg:!px-0">
             <owl-carousel-o [options]="caseSliderOptions">
 
                 <ng-container *ngFor="let productInfo of caseItemsData">
@@ -29,7 +29,7 @@
                                 class="absolute bottom-0 left-0 w-[98%] lg:w-[95%] h-3/4 -z-10 rounded-xl">
                             </div>
                             <div id="productContent"
-                                class="px-9 xl:px-0 py-7 text-white lg:inline-block xl:top-[85px] xl:max-w-[290px] lg:relative">
+                                class="px-9 xl:px-0 py-7 text-white lg:inline-block xl:top-[85px] xl:max-w-[16.125rem] lg:relative">
                                 <div id="productDesc" class="text-lg lg:text-xl tracking-wide font-bold mb-10">
                                     <p>{{productInfo.caseItemNote}}</p>
                                 </div>
