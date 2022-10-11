@@ -17,9 +17,9 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  data: any;
 
   activeSlides?: SlidesOutputData;
-  data: any;
   getPassedData(data: SlidesOutputData) {
     this.activeSlides = data;
     this.data = data.startPosition;
@@ -36,7 +36,7 @@ export class BannerComponent implements OnInit {
   bannerOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-  touchDrag: true,
+    touchDrag: true,
     pullDrag: true,
     dots: false,
     navSpeed: 300,
