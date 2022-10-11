@@ -29,8 +29,8 @@ export class BannerComponent implements OnInit {
   init: any
 
   getData(init: SlidesOutputData) {
-    console.log(init.startPosition);
     this.init = init.startPosition;
+    console.log(init.startPosition);
   }
 
   bannerOptions: OwlOptions = {

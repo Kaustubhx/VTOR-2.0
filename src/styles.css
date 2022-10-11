@@ -7,7 +7,7 @@
 @layer components {
 
     #container {
-        @apply px-5
+        @apply px-5 md:mx-5
     }
 
     .slide3_Content {
