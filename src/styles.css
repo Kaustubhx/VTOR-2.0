@@ -5,6 +5,11 @@
 
 
 @layer components {
+
+    #container {
+        @apply px-5
+    }
+
     .slide3_Content {
         @apply mx-6 flex flex-col items-start space-y-6 justify-center
     }
@@ -25,8 +30,8 @@
 
 
     /* Banner Component */
-    .md_slide3 {
-        @apply flex flex-col
+    .slide-wrapper {
+        @apply h-screen flex items-center
     }
 
 
