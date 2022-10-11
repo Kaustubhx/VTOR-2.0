@@ -5,31 +5,36 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
+
 export class HomepageComponent implements OnInit {
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  slideData = [
+  slideData: any | string = [
     {
-      slideTitle: "We Build Scalable Business Solutions",
-      slideDes: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat.",
-      imageSrc: 'https://html.crumina.net/html-utouch/img/slides1.png',
-      imageAlt: 'slide1',
+      bannerId_1: "1",
+      slideTitle_1: "We Build Scalable Business Solutions",
+      slideDes_1: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      imageSrc_1: 'https://html.crumina.net/html-utouch/img/slides1.png',
+      imageAlt_1: 'slide1',
     },
     {
-      slideTitle: "Myybaa store is a product to help small vendors",
-      slideDes: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat",
-      imageSrc: 'https://html.crumina.net/html-utouch/img/clouds2.png',
-      imageAlt: 'slide2'
+      bannerId_2: '2',
+      slideTitle_2: "Myybaa store is a product to help small vendors",
+      slideDes_2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat",
+      imageSrc_2: 'https://html.crumina.net/html-utouch/img/clouds2.png',
+      imageAlt_2: 'slide2'
     },
     {
-      slideTitle: "We help your vision become into a reality",
-      slideDes: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat",
-      imageSrc: 'https://html.crumina.net/html-utouch/img/slides2.png',
-      imageAlt: 'slide3'
+      bannerId_3: '3',
+      slideTitle_3: "We help your vision become into a reality",
+      slideDes_3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi, quis ab deleniti numquam quam obcaecati quisquam hic qui placeat",
+      imageSrc_3: 'https://html.crumina.net/html-utouch/img/slides2.png',
+      imageAlt_3: 'slide3'
     }
   ]
 
