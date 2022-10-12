@@ -21,7 +21,6 @@ import { ScreenshotsComponent } from './reusableComponent/screenshots/screenshot
 import { GplaybuttonComponent } from './reusableComponent/gplaybutton/gplaybutton.component';
 import { VtorappComponent } from './reusableComponent/vtorapp/vtorapp.component';
 import { FitappspageComponent } from './pages/fitappspage/fitappspage.component';
-import { AppScreenshotsComponent } from './components/appComponents/app-screenshots/app-screenshots.component';
 import { ContactpageComponent } from './pages/contactpage/contactpage.component';
 
 @NgModule({
@@ -42,7 +41,6 @@ import { ContactpageComponent } from './pages/contactpage/contactpage.component'
     GplaybuttonComponent,
     VtorappComponent,
     FitappspageComponent,
-    AppScreenshotsComponent,
     ContactpageComponent,
   ],
   imports: [
