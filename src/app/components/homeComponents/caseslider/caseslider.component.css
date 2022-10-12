@@ -3,10 +3,11 @@
     transition: all .3s ease;
     transition-delay: 0s;
     position: relative;
+    transition: transform 1s; 
     transform: perspective(50em) translateZ(0) translate(0%, 0%) rotateY(30deg) rotateX(20deg);
 }
 
 #produtImage:hover {
-    transform: perspective(50em) translateZ(0) translate(0%, 0%) rotateY(0deg) rotateX(0deg);
+    transform: perspective(100em) translateZ(0) translate(0%, 0%) rotateY(0deg) rotateX(0deg);
     cursor: pointer;
 }

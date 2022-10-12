@@ -21,7 +21,7 @@
 
                 <ng-container *ngFor="let productInfo of caseItemsData">
                     <ng-template carouselSlide>
-                        <div id="productContainer" class="pt-8 relative">
+                        <div id="productContainer" class="pt-8 relative cursor-pointer">
                             <div id="productImage" class="inline-block mx-10">
                                 <img [src]="productInfo.caseItemImg" class="!inline-block">
                             </div>
@@ -29,7 +29,7 @@
                                 class="absolute bottom-0 left-0 w-[98%] lg:w-[95%] h-3/4 -z-10 rounded-xl">
                             </div>
                             <div id="productContent"
-                                class="px-9 xl:px-0 py-7 text-white lg:inline-block xl:top-[85px] xl:max-w-[16.125rem] lg:relative">
+                                class="px-9 xl:px-0 py-7 text-white lg:inline-block xl:top-[85px] xl:max-w-[14.125rem] lg:relative">
                                 <div id="productDesc" class="text-lg lg:text-xl tracking-wide font-bold mb-10">
                                     <p>{{productInfo.caseItemNote}}</p>
                                 </div>
