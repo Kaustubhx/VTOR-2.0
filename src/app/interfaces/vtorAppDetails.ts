@@ -13,6 +13,10 @@ export interface vtorApp {
     appPlusPoint_2: string,
     appPlusPoint_3: string,
     appPlusPoint_4: string,
+    appImage_1: string,
+    appImage_2: string,
+    appImage_3: string,
+    appImage_4: string,
     appName: string,
     appShortDesc: string,
 }
