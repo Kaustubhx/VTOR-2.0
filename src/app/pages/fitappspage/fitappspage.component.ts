@@ -24,6 +24,10 @@ export class FitappspageComponent implements OnInit {
       appPlusPoint_2: "Qolor sit amet, consectetuer.",
       appPlusPoint_3: "Qolor sit amet, consectetuer.",
       appPlusPoint_4: "Qolor sit amet, consectetuer.",
+      appImage_1: 'https://html.crumina.net/html-utouch/img/screen2.png',
+      appImage_2: 'https://html.crumina.net/html-utouch/img/screen2.png',
+      appImage_3: 'https://html.crumina.net/html-utouch/img/screen2.png',
+      appImage_4: 'https://html.crumina.net/html-utouch/img/screen2.png',
       appName: "Fit Apps",
       appShortDesc: "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.",
     }
