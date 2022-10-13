@@ -1,9 +1,10 @@
-<div id="product" class="group max-w-xs md:max-w-xl lg:max-w-sm lg:mx-auto flex flex-col lg:flex-row items-center lg:items-start">
+<div id="product"
+    class="max-w-xs md:max-w-xl lg:max-w-sm lg:mx-auto flex flex-col lg:flex-row items-center lg:items-start">
     <img src="{{product.productImg}}" alt="" class="h-16 inline-block my-7 lg:my-0">
     <div id="productInfo" class="lg:text-start text-center lg:ml-7">
-        <p class="text-primary_text font-semibold text-xl md:text-2xl group-hover:text-sky-500 cursor-pointer">
+        <p
+            class="text-primary_text font-semibold text-xl md:text-2xl hover:text-sky-500 cursor-pointer transition-all ease-linear">
             {{product.productTitle}}</p>
         <p class="my-6 text-sm text-primary_text tracking-wide text-center lg:text-start">{{product.prodcutDes}}</p>
     </div>
-    <mat-icon class="text-sky-300 group-hover:text-sky-500 cursor-pointer mt-6">arrow_forward_ios</mat-icon>
 </div>

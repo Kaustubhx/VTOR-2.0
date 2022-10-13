@@ -62,5 +62,4 @@ export class CasesliderComponent implements OnInit {
     },
     nav: false
   }
-
 }

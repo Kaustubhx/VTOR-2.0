@@ -6,10 +6,6 @@
 
 @layer components {
 
-    #container {
-        @apply px-5 md:mx-5
-    }
-
     .slide3_Content {
         @apply mx-6 flex flex-col items-start space-y-6 justify-center
     }
@@ -32,6 +28,11 @@
     /* Banner Component */
     .slide-wrapper {
         @apply h-screen flex items-center
+    }
+
+    /* Screenshot section */
+    #appScreenshot {
+        @apply w-[61vw] md:w-[35vw] lg:w-[23vw] 2xl:w-[21vw] lg:mr-10 lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[9.5rem] mx-auto md:ml-7
     }
 
 
