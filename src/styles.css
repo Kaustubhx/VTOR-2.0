@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -18,12 +20,18 @@
         @apply absolute right-0 w-[36rem] h-96
     }
 
-    /* Header Component */
+    /* Header Component Styling*/
     
     .nav-mobile {
         @apply lg:hidden absolute top-0 right-2 h-12 w-12 block pt-2
     }
 
+    .active-link {
+        @apply lg:!text-[#0083ff]
+    }
+
+
+    /* Header Component Styling END */
 
     /* Banner Component */
     .slide-wrapper {
@@ -33,6 +41,11 @@
     /* Screenshot section */
     #appScreenshot {
         @apply w-[61vw] md:w-[35vw] lg:w-[23vw] 2xl:w-[21vw] lg:mr-10 lg:ml-auto xl:mr-[5.8rem] 2xl:mr-[9.5rem] mx-auto md:ml-7
+    }
+
+    /* Footer Component */
+    .footer_links {
+        @apply hover:ml-3 transition-all ease-in-out hover:text-[#0083ff] inline-flex duration-300 h-5
     }
 
 

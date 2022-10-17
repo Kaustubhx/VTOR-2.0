@@ -5,16 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-
 export class HomepageComponent implements OnInit {
-
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  slideData = [
+  bannerData = [
     {
       bannerId_1: "1",
       slideTitle_1: "We Build Scalable Business Solutions",
@@ -54,5 +52,5 @@ export class HomepageComponent implements OnInit {
       clientSaying: '“ Just like our name they did an unbelievable job really happy with the quality service by VTOR Labs ”',
     },
   ]
-}
 
+}
